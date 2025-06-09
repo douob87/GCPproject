@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <button id="show" onclick="show()"></button>
+    <button id="logoutBtn" onclick="logout()">登出</button>
     <div class="container">
         <h1 font color="#fff">
             <font color='purple'>數獨解答器</font>
@@ -24,11 +26,19 @@
                 {% endfor %}
             </div>
             <button type="button" id="solve-button"><b>解答</b></button>
+
+            <!-- <a href="https://www.youtube.com/"><button type="button" id="solve-button"><b>更多遊戲</b></button></a> -->
         </form>
         <div id="message"></div>
     </div>
 
     <script>
+        function show() {
+            window.location.href = 'password';
+        }
+        function logout() {
+            window.location.href = '/'; // 跳轉到 index.html
+        }
         // 限制输入为数字 1-9
         function isNumberKey(evt) {
             const charCode = evt.which || evt.keyCode;

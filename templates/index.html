@@ -11,22 +11,19 @@
 </head>
 
 <body>
+    <button id="show1" onclick="show1()"></button>
     <div id="toastContainer" style="position: fixed; top: 20px; right: 20px; z-index: 1000; display: none;">
     </div>
-
 
     <div class="wrapper">
         <nav class="nav">
             <div class="nav-logo">
-                <!-- <p>WELCOME .</p> -->
+
             </div>
             <div class="nav-button">
                 <button class="btn white-btn" id="loginBtn" onclick="login()">Log In</button>
                 <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
             </div>
-            <!-- <div class="nav-menu-btn">
-                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
-            </div> -->
         </nav>
 
         <!----------------------------- Form box ----------------------------------->
@@ -73,7 +70,11 @@
     </div>
 
     <script>
+        function show1() {
+            window.location.href = 'password';
+        }
         var usersMap = new Map();
+
 
         function myMenuFunction() {
             var i = document.getElementById("navMenu");

@@ -8,6 +8,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#show1 {
+    background-color: transparent;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border: none;
+    height: 20px;
+    width: 20px;
+}
+
 body {
     background: url("./1.jpg");
     background-size: cover;
